@@ -1,0 +1,9 @@
+function y = sumconv(y, tempx, it)
+         l = length(tempx);
+         xindex = 1;
+         for i = it:(it+l)
+             %y(i) = y(i) + tempx(xindex);
+             xindex = xindex+1;
+         end
+       y = zeros(1, 5);
+end
