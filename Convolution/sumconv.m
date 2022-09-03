@@ -1,6 +1,5 @@
 function y = sumconv(y, tempx, it)
          l = length(tempx);
-         xindex = 1;
          for i = 1:l
              y(i+it-1) = y(i+it-1) + tempx(i);
          end
