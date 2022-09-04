@@ -29,7 +29,6 @@ for k = kmin:kmax
         if x2index ~= -1
             result(resultindex) = result(resultindex) + (x1(x1index) * x2(x2index));       
         end
-       n
    end
    resultindex = resultindex+1;
 end

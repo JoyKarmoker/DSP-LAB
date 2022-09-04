@@ -26,14 +26,14 @@ hold on;
 
 
 %Quantization
-nbits = 4; % 256 qantization levels
+nbits = 2; % 16 qantization levels
 qLevels = 2^nbits;
 signalMin = min(signal2);
 signalMax = max(signal2);  
 scalingFactor = (signalMax-signalMin)/qLevels;
 signal3 = signal2 / scalingFactor; 
 signal3 = round(signal3);
-signal3 = signal3 * scalingFactor;
+signal3 = signal3 * scalingFactor
 
 
 stem(t, signal3, 'g');
