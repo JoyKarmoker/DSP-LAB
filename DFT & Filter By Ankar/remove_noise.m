@@ -21,7 +21,7 @@ order=5;
 wn=[8 12]/(fs/2);%cut off frequency 
 [b,a]=butter(order,wn,'bandpass');% return transfer coefficients function of 5th order filter
 % see frequency response of the filter
-[h,w]=freqz(b,a,1024,fs);% returns 1024 pints
+[h,w]=freqz(b,a,1024,fs);% returns 1024 points
 %frequency response vector h and corresponding angular
 %frequency vector w
 

@@ -16,6 +16,7 @@ title('Original Signal');
 
 %genrating the dft
 X = zeros(N,1);
+
 for m = 1:N
     for n = 1:N
         X(m) = X(m) + (x(n)* exp((-2j*pi*(m-1)*(n-1))/N));
@@ -42,6 +43,7 @@ stem(n, abs(X)), title('Magnitude'), xlabel('Frequency(kHz)'), ylabel('Amplitude
 %Phase spectram of 
 a = round(real(X), 3);
 b = round(imag(X), 3);
+
 s = atan(b/a);
 subplot(3,2,4);
 stem(n, rad2deg(s)), title('Phase'), xlabel('Frequency(kHz)'), ylabel('Degree');
@@ -62,6 +64,7 @@ for n=1:ln
 end
 
 n=0:N-1;
+
 %Return to figure(1)
 figure(1);
 subplot(2,1,2);
