@@ -19,4 +19,10 @@ for i=1:length(x)
 end
 t = 1: length(x);
 disp(output);
+
+z = filter(xcof, ycof, x);
+figure(1)
+plot(t, z);
+
+figure(2)
 plot(t,output, 'b'), title('difference equation'), xlabel('t'), ylabel('amplitude');

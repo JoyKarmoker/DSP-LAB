@@ -1,3 +1,7 @@
+clc;
+close all;
+clear all;
+
 x = [0.4 0.9 1.2 1.3 3.4 0.7];
 xcof = [2/3, 1];
 ycof = [1, 0.5];
